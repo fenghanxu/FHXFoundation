@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FHXFoundation'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of FHXFoundation.'
 
 # This description is used to generate tags and improve search results.
@@ -38,6 +38,6 @@ s.requires_arc = true
 
 s.frameworks = 'UIKit','Foundation'
 
-s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.2' }
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
 
 end
