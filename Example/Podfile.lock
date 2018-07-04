@@ -1,0 +1,16 @@
+PODS:
+  - FHXFoundation (0.1.0)
+
+DEPENDENCIES:
+  - FHXFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  FHXFoundation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FHXFoundation: f0dffd9fe80ddc92300d78e0bceb3c70c8102de2
+
+PODFILE CHECKSUM: 3aa76ebd9ba9a3d3c8ec378888c19963ede0d48c
+
+COCOAPODS: 1.4.0

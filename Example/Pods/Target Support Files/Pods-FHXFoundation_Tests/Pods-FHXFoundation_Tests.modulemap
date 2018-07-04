@@ -1,0 +1,6 @@
+framework module Pods_FHXFoundation_Tests {
+  umbrella header "Pods-FHXFoundation_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
