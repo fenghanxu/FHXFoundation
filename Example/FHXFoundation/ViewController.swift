@@ -77,6 +77,15 @@ class ViewController: UIViewController {
       let name3:Character = "1"
       print(name3.string)
       
+      //前面包括
+      print(arr.subArrayIncloud(front: 3))
+      //前面不包括
+      print(arr.subArrayNoIncloud(front: 3))
+      //后面包括
+      print(arr.subArrayIncloud(behind: 3))
+      //后面不包括
+      print(arr.subArrayNoIncloud(behind: 3))
+      
     }
 
 

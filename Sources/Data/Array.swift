@@ -66,6 +66,56 @@ public extension Array {
     guard from >= 0 else { return self }
     return Array(self[from..<count])
   }
+  
+  /// 获取:反向序列的值
+  ///
+  /// - Parameter index: 序列
+  /// - Returns: 指定值
+  public func value(reverse index: Int) -> Int? {
+    guard index >= 0 && index < count else { return nil }
+    return Swift.max(self.count - index, 0)
+  }
+  
+  /// 获取: 从起始位置到指定最大数量之间的数组(不包括)
+  ///
+  /// - Parameter to: 指定数量
+  /// - Returns: 子数组
+  public func subArrayNoIncloud(front: Int) -> Array {
+    guard front < count else { return self }
+    guard front >= 0 else { return self }
+    return Array(self[0..<front])
+  }
+  
+  /// 获取: 从起始位置到指定最大数量之间的数组(包括)
+  ///
+  /// - Parameter to: 指定数量
+  /// - Returns: 子数组
+  public func subArrayIncloud(front: Int) -> Array {
+    guard front < count else { return self }
+    guard front >= 0 else { return self }
+    return Array(self[0..<front+1])
+  }
+  
+  
+  /// 获取: 从起始位置到指定最大数量之间的数组(不包括)
+  ///
+  /// - Parameter to: 指定数量
+  /// - Returns: 子数组
+  public func subArrayIncloud(behind: Int) -> Array {
+    guard behind < count else { return self }
+    guard behind >= 0 else { return self }
+    return Array(self[behind..<count])
+  }
+  
+  /// 获取: 从起始位置到指定最大数量之间的数组(包括)
+  ///
+  /// - Parameter to: 指定数量
+  /// - Returns: 子数组
+  public func subArrayNoIncloud(behind: Int) -> Array {
+    guard behind < count else { return self }
+    guard behind >= 0 else { return self }
+    return Array(self[behind+1..<count])
+  }
 
   /// 获取: 指定位置的值
   ///
